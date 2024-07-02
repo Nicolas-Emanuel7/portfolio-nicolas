@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Meu Portfolio</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Nicolas Emanuel</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburguer-nav">
+        <div class="logo">Nicolas Emanuel</div>
+        <div class="hamburguer-menu">
+            <div class="hamburguer-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">Sobre Mim</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/foto-perfil.jpeg" alt="Nicolas Emanuel Perfil" class="profile-pic">
+        </div>
+
+        <div class="section__text">
+            <p class="section__text__p1">Olá, eu sou</p>
+            <h1 class="title">Nicolas Emanuel</h1>
+            <p class="section__text__p2">Desenvolvedor Full-Stack</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/curriculo-nicolas.pdf')">Baixar CV</button>
+
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contato</button>
+            </div>
+
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Meu Perfil Linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/nicolasemanueldev7/'">
+
+                <img src="./assets/github.png" alt="Meu Perfil Github" class="icon" onclick="location.href='https://github.com/Nicolas-Emanuel7'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Conheça as</p>
+        <h1 class="title">Sobre mim</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/foto-perfil-2.jpeg" alt="Nicolas Emanuel Perfil" class="about-pic">
+            </div>
+
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="icone-experiência" class="icon icon-experience">
+                        <h3>Experiência</h3>
+                        <p>Inglês Básico ao Avançado<br/>Minds English School 2021-2022</p>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="icone-experiência" class="icon icon-experience">
+                        <h3>Formação</h3>
+                        <p>Bacharel em Tecnologia da Informação<br/>UFERSA 2020-2025 (Previsão)</p>
+                    </div>
+                </div>
+
+                <div class="text-container">
+                    <p>Desenvolvedor Full-Stack em formação especializado em Python, HTML, CSS e JavaScript. Busco
+                        oportunidades para aplicar minhas habilidades em um ambiente profissional. Possuo conhecimentos
+                        em Django e React.js. Além de inglês avançado.
+                        </p>
+                </div>
+            </div>
+
+        </div>
+        <img src="./assets/arrow.png" alt="seta-icone" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore minhas</p>
+        <h1 class="title">Habilidades</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Desenvolvimento Front-End</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="check-icon" class="icon">
+                            <div>
+                                <h3>HTML5</h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="check-icon" class="icon">
+                            <div>
+                                <h3>CSS3</h3> 
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="check-icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="check-icon" class="icon">
+                            <div>
+                                <h3>React.js</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="check-icon" class="icon">
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Desenvolvimento Back-End</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="check-icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="check-icon" class="icon">
+                            <div>
+                                <h3>Django</h3>
+                                <p>Intermediário</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="check-icon" class="icon">
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="check-icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Idiomas</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="check-icon" class="icon">
+                            <div>
+                                <h3>Português</h3>
+                                <p>Nativo</p>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="check-icon" class="icon">
+                            <div>
+                                <h3>Inglês</h3>
+                                <p>Avançado</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="check-icon" class="icon">
+                            <div>
+                                <h3>Espanhol</h3>
+                                <p>Básico</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="seta-icone" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    
+    <section id="projects">
+        <p class="section__text__p1">Confira meus</p>
+        <h1 class="title">Projetos</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/studybuddy.png" alt="Projeto 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Site de Grupos de Conversa utilizando Django</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2" onclick="location.href='https://github.com/Nicolas-Emanuel7/estudoAppDjango'">Github</button>
+                    </div>
+                </div>
+    
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/expressoes2.png" alt="Projeto 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Reconhecimento de Expressões Faciais</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2" onclick="location.href='https://github.com/Nicolas-Emanuel7/reconhecimento_emocao'">Github</button>
+
+                        <button class="btn btn-color-2" onclick="window.open('./assets/Reconhecimento_emocoes_ia.pdf')">Artigo</button>
+                    </div>
+                </div>
+    
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/geradorsenha.jpeg" alt="Projeto 3" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">App Gerador de Senha utilizando React Native</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2" onclick="location.href='https://github.com/Nicolas-Emanuel7/GeradorSenhaReact'">Github</button>
+                    </div>
+                </div>
+            </div>        
+
+        </div>
+        <img src="./assets/arrow.png" alt="seta-icone" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Entre em</p>
+        <h1 class="title">Contato</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email Icone" class="icon contact-icon email-icon">
+                <p><a href="mailto:niculas20003@gmail.com">niculas20003@gmail.com</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin Icone" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/nicolasemanueldev7/">LinkedIn</a></p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#experience">Experiência</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Nicolas Emanuel. Todos os Direitos Reservados.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
